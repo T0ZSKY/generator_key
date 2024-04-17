@@ -411,6 +411,7 @@ input[type="checkbox"]:checked + label {
     justify-content: center;
     font-weight: bold;
     margin-top: 10px;
+    font-size: 30px;
 }
 
 #indicatorIcon {
@@ -429,8 +430,4 @@ input[type="checkbox"]:checked + label {
 .bon { color: green; }
 .parfait { color: blue; }
 
-/* Icônes pour les différents niveaux de sécurité */
-.nul:before { content: "\1F6AB"; } /* Icône de cadenas rouge */
-.moyen:before { content: "\1F512"; } /* Icône de cadenas orange */
-.bon:before { content: "\1F513"; } /* Icône de cadenas vert */
-.parfait:before { content: "\1F511"; } /* Icône de cadenas bleu */
+
