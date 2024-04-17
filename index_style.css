@@ -403,3 +403,34 @@ input[type="checkbox"] + label {
 input[type="checkbox"]:checked + label {
     color: #007aff; /* Couleur bleue d'Apple */
 }
+
+
+#passwordStrengthIndicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#indicatorIcon {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+#indicatorText {
+    font-size: 16px;
+}
+
+/* Couleurs pour les différents niveaux de sécurité */
+.nul { color: red; }
+.moyen { color: orange; }
+.bon { color: green; }
+.parfait { color: blue; }
+
+/* Icônes pour les différents niveaux de sécurité */
+.nul:before { content: "\1F6AB"; } /* Icône de cadenas rouge */
+.moyen:before { content: "\1F512"; } /* Icône de cadenas orange */
+.bon:before { content: "\1F513"; } /* Icône de cadenas vert */
+.parfait:before { content: "\1F511"; } /* Icône de cadenas bleu */
