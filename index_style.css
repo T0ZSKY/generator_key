@@ -1,0 +1,134 @@
+body {
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWRoZWExbjBrejN2bWh6cHg4YnI2cmxlaHo3aHB6dzF4dWV1Z3FkeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aRZ4vTsHnyW6A/giphy.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; /* Changement de la couleur du texte en blanc */
+    font-family: Arial, sans-serif; /* Changer la police du texte */
+    padding: 20px; /* Ajouter un espace autour du contenu */
+}
+
+h1 {
+    text-align: center;
+    animation: fadeInDown 1s ease-out; /* Animation d'apparition */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    animation: slideInUp 1s ease-out; /* Animation de glissement vers le haut */
+}
+
+label {
+    display: block;
+    animation: bounceInLeft 1s ease-out; /* Animation de rebond vers la gauche */
+}
+
+input[type="number"],
+input[type="checkbox"],
+input[type="text"],
+input[type="submit"] {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333; /* Couleur du texte plus sombre */
+    background-color: #f1f1f1; /* Couleur de fond plus claire */
+    transition: all 0.3s ease; /* Transition fluide pour les animations */
+}
+
+input[type="submit"] {
+    background-color: #007aff; /* Couleur bleue d'Apple */
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Couleur bleue foncée au survol */
+}
+
+input[type="submit"]:active {
+    transform: scale(0.95); /* Rétrécissement léger lors du clic */
+}
+
+input[type="checkbox"]:checked + label::before {
+    content: '\2714'; /* Symbole de coche Unicode */
+    display: inline-block;
+    margin-right: 5px;
+    color: #007aff; /* Couleur bleue d'Apple */
+    animation: checkBoxBounce 0.5s ease-in-out; /* Animation de rebond sur la coche */
+}
+
+#passwordOutput {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    animation: zoomIn 1s ease-out; /* Animation de zoom */
+}
+
+/* Styles pour les liens */
+a {
+    color: white; /* Couleur du lien */
+    text-decoration: underline; /* Souligner le lien */
+}
+
+a:hover {
+    color: #cccccc; /* Couleur du lien au survol */
+}
+
+/* Définition des animations */
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes checkBoxBounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
